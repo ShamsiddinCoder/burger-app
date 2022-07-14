@@ -1,0 +1,30 @@
+* {
+    margin: none; padding: 0;
+    box-sizing: border-box;
+}
+.Orders {
+    position: fixed;
+    z-index: 9999;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80vh;
+    background: #fff;
+    border: solid 2px #ccc;
+    padding: 1.4rem;
+    border-radius: .6rem;
+    overflow-y: auto; 
+    transition: .4s ease;
+}
+
+@media(max-width: 1200px){
+    .Orders {
+        width: 60%;
+    }
+}
+@media(max-width: 768px){
+    .Orders {
+        width: 80%;
+    }
+}

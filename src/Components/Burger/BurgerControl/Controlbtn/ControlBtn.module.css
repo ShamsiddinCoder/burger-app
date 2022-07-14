@@ -1,0 +1,33 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+}
+.ControlBtn {
+    width: 40rem;
+    background: rgb(179, 119, 40);
+    padding: .4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ControlBtn button {
+    padding: .4rem 1rem;
+    width: 8rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    background:rgb(206, 147, 70);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: .4rem;
+    box-shadow: 0 6px 14px rgba(0,0,0,.18);
+}
+.ControlBtn button:disabled {
+    background:rgb(121, 86, 40);
+}
+.ControlBtn p {
+    font-size: 2rem;
+    color: #fff;
+    font-family: sans-serif; 
+}

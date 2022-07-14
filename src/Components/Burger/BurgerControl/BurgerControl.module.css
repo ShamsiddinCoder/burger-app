@@ -1,0 +1,28 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.BurgerControl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(199, 160, 88);
+}
+.BurgerControl .Orderd {
+    width: 20rem;
+    padding: .6rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    border-radius: .6rem;
+    cursor: pointer;
+    color: #fff;
+    background:rgb(206, 147, 70);
+    box-shadow: 0 6px 14px rgba(0,0,0,.18);
+    border: solid 1px #000;
+}
+.BurgerControl .Orderd:disabled {
+    background:rgb(121, 86, 40);
+}

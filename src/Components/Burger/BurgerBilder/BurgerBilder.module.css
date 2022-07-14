@@ -1,0 +1,10 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.BurgerBild {
+    width: 40rem;
+    height: 100%;
+    padding: 40px 0;
+    overflow-x: auto;
+}

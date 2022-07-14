@@ -1,0 +1,68 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.OrderInform {
+    width: 100%;
+    height: 50px;
+    /* height: auto; */
+    border: solid 2px #ccc;
+    padding: .4rem 1rem;
+    border-radius: .6rem;
+    margin: .8rem 0;
+    overflow: hidden;
+    transition: .3s ease;
+    position: relative;
+}
+.OrderInform div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.OrderInform div h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.OrderInform div h1 i {
+    font-size: 2rem;
+}
+.OrderInform:not(:last-child) {
+    padding-bottom: 1rem;
+}
+.OrderInform .error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.3rem;
+    color: rgb(165, 18, 18);
+}
+.OrderInform nav {
+    padding: 0 .4rem;
+}
+.OrderInform nav .navbor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .4rem;
+    border-bottom: 3px #ccc solid;
+    margin-bottom: 1rem;
+}
+.OrderInform nav .navbor li {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+.OrderInform nav .navbor li i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: .8rem;
+    color: blue;
+}

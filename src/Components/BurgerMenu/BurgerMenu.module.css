@@ -1,0 +1,95 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.BurgerMenu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,.28);
+}
+.BurgerMenu nav {
+    width: 33%;
+}
+.BurgerMenu .Logo {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BurgerMenu .Logo img {
+    height: 4rem;
+    cursor: pointer;
+}
+.BurgerMenu .Orders {
+    font-size: 1.6rem;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+.BurgerMenu .Orders a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    position: relative;
+}
+.BurgerMenu .Orders a .CounterNoCheck {
+    position: absolute;
+    color: rgb(189, 30, 30);
+    top: -10px;
+    right: -20px;
+    font-size: 1rem;
+}
+.BurgerMenu .Orders a .CounterChecked {
+    position: absolute;
+    color: rgb(30, 94, 189);
+    top: 12px;
+    right: -20px;
+    font-size: 1rem;
+}
+.BurgerMenu .Orders a:hover {
+    color: rgb(11, 93, 201);
+}
+.BurgerMenu .Orders a.active {
+    color: rgb(11, 93, 201);
+}
+a:hover:after,
+a.active::after {
+    /* width: 100%; */
+    /* left: 0; */
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+@media(max-width: 911px){
+    .BurgerMenu nav {
+        position: absolute;
+        top: 4rem;
+        left: -102%;
+        width: 20rem;
+        background: #fff;
+        padding: 2rem;
+        box-shadow: 0 6px 14px rgba(0,0,0,.18);
+    }
+    .BurgerMenu nav a {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .BurgerMenu .Logo {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .BurgerMenu .Orders {
+        width: 50%;
+    }
+}
+@media(max-width: 450px){
+    .BurgerMenu nav {
+        width: 100%;
+    }
+}

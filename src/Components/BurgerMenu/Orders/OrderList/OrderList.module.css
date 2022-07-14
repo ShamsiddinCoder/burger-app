@@ -1,0 +1,38 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+.OrderList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem 0;
+}
+.OrderList:not(:last-child){
+    border-bottom: 2px solid #ccc;
+}
+.OrderList li {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.OrderList li:nth-child(2), 
+.OrderList li:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.OrderList li:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.OrderList li i {
+    font-size: 1.6rem;
+    margin-left: 2px;
+    cursor: pointer;
+    color: crimson;
+}
